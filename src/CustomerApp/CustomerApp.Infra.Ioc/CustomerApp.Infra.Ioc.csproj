@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApp.Application\CustomerApp.Application.csproj" />
+    <ProjectReference Include="..\CustomerApp.Domain\CustomerApp.Domain.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infra.Data\CustomerApp.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
