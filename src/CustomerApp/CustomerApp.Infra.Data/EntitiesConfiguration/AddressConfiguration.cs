@@ -9,7 +9,7 @@ namespace CustomerApp.Infra.Data.EntitiesConfiguration
         public void Configure(EntityTypeBuilder<Address> builder)
         {
             builder.HasKey(t => t.Id);
-            builder.Property(p => p.MainAddress).HasMaxLength(200).IsRequired();
+            builder.Property(p => p.Logradouro).HasMaxLength(200).IsRequired();
         }
     }
 }

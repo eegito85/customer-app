@@ -6,12 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>f7a9e3c3-ca63-46ba-b9c9-f802a03842f3</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApp.Infra.Ioc\CustomerApp.Infra.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

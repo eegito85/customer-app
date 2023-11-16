@@ -5,10 +5,10 @@ namespace CustomerApp.Application.Interfaces
 {
     public interface IAddressService
     {
-        Task<AddressDTO> GetAddressById(int id);
-        Task<AddressDTO> CreateAddress(AddressDTO address);
+        Task<AddressDTO> GetAddressByCustomerId(int id);
+        Task<AddressDTO> CreateAddress(AddressDTO address, int customerId);
         Task<AddressDTO> UpdateAddress(AddressDTO address);
         Task RemoveAddress(int id);
-        Task<AddressDTO> GetAddressByApi(string cep);
+        Task<AddressDTO> GetAddressByApi(string baseUrl, string cep);
     }
 }

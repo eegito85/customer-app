@@ -22,7 +22,7 @@ namespace CustomerApp.Infra.Data.Repositories
 
         public async Task<Address> GetAddressByIdAsync(int id)
         {
-            var address = await _context.Addresses.FindAsync(id);
+            var address = _context.Addresses.Where(a => a.CustommerId == id).FirstOrDefault();
             if (address == null) return new Address();
             return address;
         }

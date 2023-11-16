@@ -8,14 +8,14 @@ namespace CustomerApp.Application.DTOs
         public int Id { get; set; }
         public int CustommerId { get; set; }
         public string Cep { get; set; }
-        public string MainAddress { get; set; }
-        public string Complement { get; set; }
-        public string Neighborhood { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
+        public string Logradouro { get; set; }
+        public string Complemento { get; set; }
+        public string Bairro { get; set; }
+        public string Localidade { get; set; }
+        public string Uf { get; set; }
         public int Ibge { get; set; }
-        public int Guide { get; set; }
-        public int CityPhoneCode { get; set; }
+        public int Gia { get; set; }
+        public int Ddd { get; set; }
         public int Siafi { get; set; }
     }
 }

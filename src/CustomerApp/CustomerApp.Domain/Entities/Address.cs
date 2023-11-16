@@ -16,31 +16,36 @@ namespace CustomerApp.Domain.Entities
         public string Cep {  get; set; }
 
         [JsonPropertyName("logradouro")]
-        public string MainAddress { get; set; }
+        [Column(name: "MainAddress")]
+        public string Logradouro { get; set; }
 
         [JsonPropertyName("complemento")]
-        public string Complement { get; set; }
+        [Column(name: "Complement")]
+        public string Complemento { get; set; }
 
         [JsonPropertyName("bairro")]
-        public string Neighborhood { get; set; }
+        [Column(name: "Neighbohood")]
+        public string Bairro { get; set; }
 
         [JsonPropertyName("localidade")]
-        public string City { get; set; }
+        [Column(name:"City")]
+        public string Localidade { get; set; }
 
         [JsonPropertyName("uf")]
-        public string State { get; set; }
+        [Column(name: "State")]
+        public string Uf { get; set; }
 
         [JsonPropertyName("ibge")]
         [NotMapped]
         public int Ibge { get; set; }
 
-        [JsonPropertyName("guia")]
+        [JsonPropertyName("gia")]
         [NotMapped]
-        public int Guide { get; set; }
+        public int Gia { get; set; }
 
         [JsonPropertyName("ddd")]
         [NotMapped]
-        public int CityPhoneCode { get; set; }
+        public int Ddd { get; set; }
 
         [JsonPropertyName("siafi")]
         [NotMapped]
